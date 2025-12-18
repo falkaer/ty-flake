@@ -64,7 +64,7 @@
           installPhase = ''
             runHook preInstall
             mkdir -p $out/bin
-            cp ty $out/bin/
+            cp */ty $out/bin/
             chmod +x $out/bin/ty
             runHook postInstall
           '';
