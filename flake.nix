@@ -14,31 +14,31 @@
       system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        version = "0.0.70";
+        version = "0.0.71";
 
         x86_64-linux = pkgs.fetchurl {
           url = "https://github.com/astral-sh/ty/releases/download/${version}/ty-x86_64-unknown-linux-gnu.tar.gz";
-          hash = "sha256-bkTViZjXsWtjDWIp8QAqay7SjlbMhW0WyZbtJX4ef94=";
+          hash = "sha256-L5Kwdj9+mDgANXODmHVR3Od62et9YTbpr0k2We5mlLo=";
         };
 
         i686-linux = pkgs.fetchurl {
           url = "https://github.com/astral-sh/ty/releases/download/${version}/ty-i686-unknown-linux-gnu.tar.gz";
-          hash = "sha256-LZfpP3wQCxX4kjNuGu0IRNnNf1/Dd1p4WdWqj4m2aaU=";
+          hash = "sha256-mmMGxFqHa5G/86xJycB5rL/jISIUWMYw1cvJGKubs1c=";
         };
 
         aarch64-linux = pkgs.fetchurl {
           url = "https://github.com/astral-sh/ty/releases/download/${version}/ty-aarch64-unknown-linux-gnu.tar.gz";
-          hash = "sha256-WZanvdfrk1SAMM4IQAbMci0/uYTdOOW0A/Ti6ZrofTg=";
+          hash = "sha256-pcRDsFUV8x5UcfBZvN6NVrOIN4CRCTiB8iUx5kdJdiU=";
         };
 
         x86_64-darwin = pkgs.fetchurl {
           url = "https://github.com/astral-sh/ty/releases/download/${version}/ty-x86_64-apple-darwin.tar.gz";
-          hash = "sha256-Tr+sKEZZpwULJOl7oFdaLWbbtiGQAV8SdceHBqTQifM=";
+          hash = "sha256-olyaik/q8Qy2oVJkwj3i01569NuI0f/o5ZlMor77Qak=";
         };
 
         aarch64-darwin = pkgs.fetchurl {
           url = "https://github.com/astral-sh/ty/releases/download/${version}/ty-aarch64-apple-darwin.tar.gz";
-          hash = "sha256-UAdglNPrv5h0msOVuftvzCXLm6hKQZyp1ZVuIhs3MCo=";
+          hash = "sha256-m1mpvR6jkxjec2hImbd4fWojwE0MHki4Rjq6vBJ+wwc=";
         };
       in
       {
